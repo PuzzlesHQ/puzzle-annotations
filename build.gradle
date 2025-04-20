@@ -1,0 +1,70 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+group = 'dev.puzzleshq'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+java {
+    withJavadocJar()
+    withSourcesJar()
+}
+
+java {
+    sourceCompatibility = '1.5'
+    targetCompatibility = '1.5'
+
+    toolchain {
+        version = JavaVersion.VERSION_17
+    }
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = p_group
+            artifactId = p_id
+
+            from components.java
+
+            pom {
+                name = p_name
+                description = p_desc
+                url = p_git
+
+                licenses {
+                    license {
+                        name = "GNU Lesser General Public License"
+                        url = "https://www.gnu.org/licenses/lgpl-2.1.html"
+                        distribution = "LGPL"
+                        comments = "This project includes LGPL-licensed components."
+                    }
+                }
+
+                developers {
+                    developer {
+                        id = 'mrzombii'
+                        name = 'Mr Zombii'
+                        email = 'thezombiigames@gmail.com'
+                    }
+                }
+                scm {
+                    connection = "${p_git}.git"
+                    developerConnection = "${p_git}.git"
+                    url = "${p_git}.git"
+                }
+            }
+        }
+    }
+}
+
+wrapper {
+    gradleVersion = "8.5"
+    distributionType = Wrapper.DistributionType.ALL
+}
