@@ -1,6 +1,6 @@
-package dev.puzzlehq.annotation;
+package dev.puzzleshq.annotation;
 
-import dev.puzzlehq.annotation.stability.Stable;
+import dev.puzzleshq.annotation.stability.Stable;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.*;
@@ -11,7 +11,7 @@ import java.lang.annotation.*;
  * outside the project that the annotated element's housing jar/project.
  * Such elements may change or be removed at any time without warning.
  * <br>
- * <sub>Usage is similar to the stages usage of {@link dev.puzzlehq.annotation.stability.Unstable}.</sub>
+ * <sub>Usage is similar to the stages usage of {@link dev.puzzleshq.annotation.stability.Unstable}.</sub>
  *
  * @since 1.0.0
  * @author Mr-Zombii

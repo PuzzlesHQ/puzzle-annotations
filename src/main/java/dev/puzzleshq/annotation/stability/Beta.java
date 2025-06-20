@@ -1,4 +1,4 @@
-package dev.puzzlehq.annotation.stability;
+package dev.puzzleshq.annotation.stability;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -6,8 +6,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Indicates that the annotated element is in an early stage of development, and
- * It may behave unpredictably or be changed or removed in future versions.
+ * Indicates that the annotated element is in an late stage of development, and
+ * may be buggy but will <strong>NOT</strong> be changed or removed without warning.
  *
  * @since 1.0.0
  * @author Mr-Zombii
@@ -16,6 +16,5 @@ import java.lang.annotation.Target;
 @java.lang.annotation.Documented
 @Retention(RetentionPolicy.CLASS)
 @Target({ElementType.TYPE})
-public @interface Experimental {
-    
+public @interface Beta {
 }

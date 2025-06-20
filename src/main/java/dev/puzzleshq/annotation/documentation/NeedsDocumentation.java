@@ -1,6 +1,6 @@
-package dev.puzzlehq.annotation.documentation;
+package dev.puzzleshq.annotation.documentation;
 
-import dev.puzzlehq.annotation.stability.Stable;
+import dev.puzzleshq.annotation.stability.Stable;
 
 import java.lang.annotation.*;
 import java.lang.annotation.Documented;

@@ -1,4 +1,4 @@
-package dev.puzzlehq.annotation.stability;
+package dev.puzzleshq.annotation.stability;
 
 import java.lang.annotation.*;
 
