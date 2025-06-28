@@ -6,8 +6,8 @@ import java.lang.annotation.RetentionPolicy;
 /**
  * A simple note that stays after compilation unlike a comment.
 
- * @author Mr-Zombii
  * @since 1.0.1
+ * @author Mr-Zombii
  */
 @Retention(RetentionPolicy.CLASS)
 public @interface Note {
