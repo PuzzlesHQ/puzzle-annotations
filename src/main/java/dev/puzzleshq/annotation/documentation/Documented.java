@@ -8,6 +8,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
+ * A marked to display if something is documented.
+ *
  * @since 1.0.0
  * @author Mr-Zombii
  */
